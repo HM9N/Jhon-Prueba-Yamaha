@@ -1,0 +1,142 @@
+{
+  "sales": [
+    {
+      "id": "1003456789",
+      "numeroFactura": "F-0001",
+      "ciudad": "Cali",
+      "tienda": "Avenida 80 #15-67",
+      "precio": "1500000",
+      "numeroMotor": "NM123456",
+      "modelo": "Yamaha MT-03",
+      "vendedor": "1034567890",
+      "cliente": "1009876543"
+    },
+    {
+      "id": "1003456790",
+      "numeroFactura": "F-0002",
+      "ciudad": "Bogotá",
+      "tienda": "Carrera 12 #8-45",
+      "precio": "2300000",
+      "numeroMotor": "NM654321",
+      "modelo": "Yamaha R3",
+      "vendedor": "1035678901",
+      "cliente": "1010987654"
+    },
+    {
+      "id": "1003456791",
+      "numeroFactura": "F-0003",
+      "ciudad": "Medellín",
+      "tienda": "Calle 50 #20-30",
+      "precio": "1800000",
+      "numeroMotor": "NM987654",
+      "modelo": "Yamaha XSR700",
+      "vendedor": "1036789012",
+      "cliente": "1012098765"
+    },
+    {
+      "id": "1003456792",
+      "numeroFactura": "F-0004",
+      "ciudad": "Barranquilla",
+      "tienda": "Diagonal 33 #14-60",
+      "precio": "2700000",
+      "numeroMotor": "NM567890",
+      "modelo": "Yamaha FZ-25",
+      "vendedor": "1037890123",
+      "cliente": "1013209876"
+    },
+    {
+      "id": "1003456793",
+      "numeroFactura": "F-0005",
+      "ciudad": "Bucaramanga",
+      "tienda": "Transversal 22 #10-98",
+      "precio": "2000000",
+      "numeroMotor": "NM112233",
+      "modelo": "Yamaha Tracer 900",
+      "vendedor": "1038901234",
+      "cliente": "1014320987"
+    },
+    {
+      "id": "1003456794",
+      "numeroFactura": "F-0006",
+      "ciudad": "Cartagena",
+      "tienda": "Calle 18 #5-77",
+      "precio": "2200000",
+      "numeroMotor": "NM445566",
+      "modelo": "Yamaha Tenere 700",
+      "vendedor": "1039012345",
+      "cliente": "1015432098"
+    },
+    {
+      "id": "1003456795",
+      "numeroFactura": "F-0007",
+      "ciudad": "Pereira",
+      "tienda": "Avenida 45 #9-20",
+      "precio": "2800000",
+      "numeroMotor": "NM778899",
+      "modelo": "Yamaha YZF-R6",
+      "vendedor": "1040123456",
+      "cliente": "1016543209"
+    },
+    {
+      "id": "1003456796",
+      "numeroFactura": "F-0008",
+      "ciudad": "Manizales",
+      "tienda": "Carrera 9 #23-11",
+      "precio": "1600000",
+      "numeroMotor": "NM334455",
+      "modelo": "Yamaha FZ-S",
+      "vendedor": "1041234567",
+      "cliente": "1017654320"
+    },
+    {
+      "id": "1003456797",
+      "numeroFactura": "F-0009",
+      "ciudad": "Santa Marta",
+      "tienda": "Calle 7 #45-33",
+      "precio": "1900000",
+      "numeroMotor": "NM556677",
+      "modelo": "Yamaha WR450F",
+      "vendedor": "1042345678",
+      "cliente": "1018765431"
+    },
+    {
+      "id": 1738722800676,
+      "numeroFactura": "5456",
+      "ciudad": "vasgsg",
+      "tienda": "Tienda 1",
+      "precio": "555",
+      "numeroMotor": "54646",
+      "modelo": "fasfsg",
+      "vendedor": "1034567890",
+      "cliente": "1009876543"
+    }
+  ],
+  "clientes": [
+    {
+      "id": "1009876543",
+      "nombre": "Juan Pérez",
+      "telefono": "3001234567",
+      "correo": "juanperez@example.com"
+    },
+    {
+      "id": "1010987654",
+      "nombre": "María Gómez",
+      "telefono": "3109876543",
+      "correo": "mariagomez@example.com"
+    }
+  ],
+  "vendedores": [
+    {
+      "id": "1034567890",
+      "nombre": "Carlos Rodríguez",
+      "telefono": "3203456789",
+      "correo": "carlosrodriguez@example.com"
+    },
+    {
+      "id": "1035678901",
+      "nombre": "Ana Fernández",
+      "telefono": "3215678901",
+      "correo": "anafernandez@example.com"
+    }
+  ]
+}

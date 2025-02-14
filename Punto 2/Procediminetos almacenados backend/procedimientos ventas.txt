@@ -1,0 +1,39 @@
+CREATE PROCEDURE InsertarVentaSP
+    @numero_factura VARCHAR(50),
+    @cliente_id INT,
+    @vehiculo_id INT,
+    @tienda_id INT,
+    @vendedor_id INT,
+    @ciudad VARCHAR(100),
+    @precio DECIMAL(12,2)
+AS
+BEGIN
+    INSERT INTO Ventas (numero_factura, cliente_id, vehiculo_id, tienda_id, vendedor_id, ciudad, precio)
+    VALUES (@numero_factura, @cliente_id, @vehiculo_id, @tienda_id, @vendedor_id, @ciudad_venta, @precio);
+END;
+
+
+
+CREATE PROCEDURE ObtenerVentas
+AS
+BEGIN
+    SELECT 
+        v.venta_id,
+        v.fecha,
+        v.numero_factura,
+        c.nombres + ' ' + c.apellidos AS cliente,
+        ve.modelo AS vehiculo,
+        ve.color,
+        t.nombre AS tienda,
+        t.ciudad AS ciudad_tienda,
+        ven.nombre + ' ' + ven.apellido AS vendedor,
+        v.ciudad,
+        v.precio,
+        v.fecha_registro
+    FROM Ventas v
+    INNER JOIN Clientes c ON v.cliente_id = c.cliente_id
+    INNER JOIN Vehiculos ve ON v.vehiculo_id = ve.vehiculo_id
+    INNER JOIN Tiendas t ON v.tienda_id = t.tienda_id
+    INNER JOIN Vendedores ven ON v.vendedor_id = ven.vendedor_id
+    ORDER BY v.fecha_registro DESC;
+END;

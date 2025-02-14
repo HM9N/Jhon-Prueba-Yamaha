@@ -1,0 +1,18 @@
+CREATE PROCEDURE InsertarClienteSP
+    @cedula VARCHAR(20),
+    @nombres VARCHAR(50),
+    @apellidos VARCHAR(50),
+    @direccion TEXT = NULL,
+    @fecha_nacimiento DATE = NULL,
+    @genero CHAR(1) = NULL,
+    @celular VARCHAR(15) = NULL,
+    @email VARCHAR(100) = NULL
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    INSERT INTO Clientes (cedula, nombres, apellidos, direccion, fecha_nacimiento, genero, celular, email)
+    VALUES (@cedula, @nombres, @apellidos, @direccion, @fecha_nacimiento, @genero, @celular, @email);
+
+    PRINT 'Cliente registrado exitosamente';
+END;

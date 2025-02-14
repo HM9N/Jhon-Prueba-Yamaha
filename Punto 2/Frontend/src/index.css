@@ -1,0 +1,45 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"] {
+  border: thin solid #dedede;
+  border-radius: 0.25rem;
+  padding: 8px;
+  outline: none;
+  margin: 0 auto 1rem;
+  display: block;
+  width: 40%;
+  font-size: 1rem;
+  line-height: 1;
+  background-color: transparent;
+}
+
+select{
+  border: thin solid #dedede;
+  border-radius: 0.25rem;
+  padding: 8px;
+  outline: none;
+  margin: 0 auto 1rem;
+  display: block;
+  width: 41.5%;
+  font-size: 1rem;
+  line-height: 1;
+  background-color: transparent;
+}
+
+table {
+  width: 100%;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 0.5rem;
+  border-bottom: thin solid #dedede;
+}
+

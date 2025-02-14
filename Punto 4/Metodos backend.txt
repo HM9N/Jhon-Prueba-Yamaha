@@ -1,0 +1,46 @@
+       public class PeriodicidadCliente
+{
+    public int ClienteId { get; set; }
+    public string Nombres { get; set; }
+    public string Apellidos { get; set; }
+    public int TotalMotos { get; set; }
+    public string ModelosComprados { get; set; }
+    public double periodicidad {get; set; }
+    public Datetime? futuraCompra {get; set; } 
+}
+
+
+	 [HttpGet("obtenerClientesPeriodicidad")]
+        public async Task<IActionResult> obtenerClientesPeriodicidad()
+        {
+            List<PeriodicidadCliente> periodicidades = new List<PeriodicidadCliente>();
+
+            using (SqlConnection conexionSQL = new SqlConnection(_configuration.GetConnectionString("connectionString")))
+            {
+                using (SqlCommand comandoSQL = new SqlCommand("ObtenerPeriodicidadClienteSP", conexionSQL))
+                {
+                    comandoSQL.CommandType = CommandType.StoredProcedure;
+                    await conexionSQL.OpenAsync();
+
+                    using (SqlDataReader reader = await comandoSQL.ExecuteReaderAsync())
+                    {
+                        while (await reader.ReadAsync())
+                        {
+                            periodicidades.Add(new PeriodicidadCliente
+                            {
+                                ClienteId = reader["cliente_id"],
+                                Nombres = reader["nombres"].ToString(),
+                                Apellidos = reader["apellidos"].ToString(),
+                                TotalMotos = reader["total_motos"],
+                                ModelosComprados = reader["modelos_comprados"].ToString(),
+				Periodicidad = reader["periodicidad"],
+				FuturaCompra = reader["proxima_compra_estimada"]
+                            });
+                        }
+                    }
+                }
+		
+            }
+
+            return Ok(periodicidades);
+        }

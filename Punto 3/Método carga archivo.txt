@@ -1,0 +1,68 @@
+    [HttpPost("cargar")]
+    public async Task<IActionResult> CargarVentas(IFormFile file)
+    {
+        if (file == null || file.Length == 0)
+            return BadRequest("Debe seleccionar un archivo");
+
+        var sales = new List<Sale>();
+
+        using (var reader = new StreamReader(file.OpenReadStream()))
+        {
+            int lineNumber = 0;
+            while (!reader.EndOfStream)
+            {
+                var line = await reader.ReadLineAsync();
+                if (lineNumber++ == 0) continue; 
+
+                var values = line.Split(',');
+
+                if (values.Length < 8) // se valida el número de columnas que tenga la fila
+                    return BadRequest($"Error en la línea {lineNumber}: Faltan datos.");
+
+                    
+
+            // y acá se pueden agregar más validaciones dependiendo la lógica del negocio 
+
+            // también se puede tener anteriormente una lista con los clientes, vehiculos, etc para validar si sí existen
+            // en la base de datos
+
+            // por ejemplo 
+
+            List<Client> clients = new List<Client>();
+
+            // se llama el repositorio encargado de traer, en este caso, solo las cédulas de los clientes
+            // usamos linq para filtar, suponiendo que el cliente está en la columna 2 del archivo, entonces:
+
+            Client foundClient = clients.FirstOrDefault(c => c.Cedula == values[1]);
+
+            // Y así seguimos con los demás
+
+            if (foundClient == null || foundVehicle == null || foundSeller == null || foundStore == null)
+                    return BadRequest($"Error en la línea {lineNumber}: Referencias inexistentes.");
+
+            // obtener el resto de variables usando el array values:
+
+            var NumeroFactura = values[3];
+            //resto de variables
+
+                // Agregar venta a la lista
+                sales.Add(new Sale
+                {
+                    NumeroFactura = NumeroFactura,
+                    Ciudad = Ciudad,
+                    // resto de atributos de la clase Sale
+                });
+            }
+        }
+
+    // luego de que todo esté bien, se guarda en la base de datos
+    // supondré que se usa entity framework para no tener que hacer repository y demás como se hizo en el punto 2
+    // sin embargo, es recomendable implementar service y reposory (aún usando entity framework)
+    // otro punto es que mucha lógica debería ir solamente en el service, para que el controlador cumpla solamente su función.
+
+    _context.Ventas.AddRange(ventas);
+    await _context.SaveChangesAsync();
+
+    return Ok("Ventas cargadas correctamente.");
+    }
+

@@ -1,0 +1,57 @@
+use FidelizacionBBDD;
+go
+
+CREATE TABLE Clientes (
+    cliente_id INT IDENTITY(1,1) PRIMARY KEY,
+    cedula VARCHAR(20) UNIQUE NOT NULL,
+    nombres VARCHAR(50) NOT NULL,
+    apellidos VARCHAR(50) NOT NULL,
+    direccion VARCHAR(50),
+    fecha_nacimiento DATE,
+    genero VARCHAR(50) NOT NULL,
+    celular VARCHAR(15),
+    email VARCHAR(100) UNIQUE
+);
+
+CREATE TABLE Vehiculos (
+    vehiculo_id INT IDENTITY(1,1) PRIMARY KEY,
+    numero_motor VARCHAR(50) UNIQUE NOT NULL,
+    modelo VARCHAR(30) NOT NULL,
+    cilindraje INT NOT NULL,
+    color VARCHAR(20),
+    fecha_ensamble DATE NOT NULL,
+    anio_modelo INT NOT NULL
+);
+
+CREATE TABLE Tiendas (
+    tienda_id INT IDENTITY(1,1) PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    ciudad VARCHAR(100) NOT NULL,
+    direccion TEXT NOT NULL
+);
+
+CREATE TABLE Vendedores (
+    vendedor_id INT IDENTITY(1,1) PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    apellido VARCHAR(100) NOT NULL,
+    cedula VARCHAR(20) UNIQUE NOT NULL,
+    celular VARCHAR(15),
+    email VARCHAR(100) UNIQUE
+);
+
+CREATE TABLE Ventas (
+    venta_id INT IDENTITY(1,1) PRIMARY KEY,
+    fecha DATE NOT NULL,
+    numero_factura VARCHAR(50) UNIQUE NOT NULL,
+    cliente_id INT NOT NULL,
+    vehiculo_id INT NOT NULL,
+    tienda_id INT NOT NULL,
+    vendedor_id INT NOT NULL,
+    ciudad VARCHAR(100) NOT NULL,
+    precio DECIMAL(12,2) NOT NULL,
+    fecha_registro DATETIME DEFAULT GETDATE(),
+    FOREIGN KEY (cliente_id) REFERENCES Clientes(cliente_id),
+    FOREIGN KEY (vehiculo_id) REFERENCES Vehiculos(vehiculo_id),
+    FOREIGN KEY (tienda_id) REFERENCES Tiendas(tienda_id),
+    FOREIGN KEY (vendedor_id) REFERENCES Vendedores(vendedor_id)
+);

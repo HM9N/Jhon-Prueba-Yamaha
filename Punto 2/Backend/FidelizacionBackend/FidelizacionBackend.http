@@ -1,0 +1,6 @@
+@FidelizacionBackend_HostAddress = http://localhost:5100
+
+GET {{FidelizacionBackend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

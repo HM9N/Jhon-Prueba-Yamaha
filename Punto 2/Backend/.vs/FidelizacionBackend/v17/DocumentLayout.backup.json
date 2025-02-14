@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\XLAT0\\Documents\\GitHub\\Prueba-Yamaha-Jhon\\Punto 2\\Backend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{192F35A9-F218-4D24-8F12-2F2471070047}|FidelizacionBackend\\FidelizacionBackend.csproj|c:\\users\\xlat0\\documents\\github\\prueba-yamaha-jhon\\punto 2\\backend\\fidelizacionbackend\\repositories\\clientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{192F35A9-F218-4D24-8F12-2F2471070047}|FidelizacionBackend\\FidelizacionBackend.csproj|solutionrelative:fidelizacionbackend\\repositories\\clientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{192F35A9-F218-4D24-8F12-2F2471070047}|FidelizacionBackend\\FidelizacionBackend.csproj|c:\\users\\xlat0\\documents\\github\\prueba-yamaha-jhon\\punto 2\\backend\\fidelizacionbackend\\services\\clientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{192F35A9-F218-4D24-8F12-2F2471070047}|FidelizacionBackend\\FidelizacionBackend.csproj|solutionrelative:fidelizacionbackend\\services\\clientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{192F35A9-F218-4D24-8F12-2F2471070047}|FidelizacionBackend\\FidelizacionBackend.csproj|c:\\users\\xlat0\\documents\\github\\prueba-yamaha-jhon\\punto 2\\backend\\fidelizacionbackend\\controllers\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{192F35A9-F218-4D24-8F12-2F2471070047}|FidelizacionBackend\\FidelizacionBackend.csproj|solutionrelative:fidelizacionbackend\\controllers\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ClientRepository.cs",
+              "DocumentMoniker": "C:\\Users\\XLAT0\\Documents\\GitHub\\Prueba-Yamaha-Jhon\\Punto 2\\Backend\\FidelizacionBackend\\Repositories\\ClientRepository.cs",
+              "RelativeDocumentMoniker": "FidelizacionBackend\\Repositories\\ClientRepository.cs",
+              "ToolTip": "C:\\Users\\XLAT0\\Documents\\GitHub\\Prueba-Yamaha-Jhon\\Punto 2\\Backend\\FidelizacionBackend\\Repositories\\ClientRepository.cs",
+              "RelativeToolTip": "FidelizacionBackend\\Repositories\\ClientRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T22:10:21.423Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ClientService.cs",
+              "DocumentMoniker": "C:\\Users\\XLAT0\\Documents\\GitHub\\Prueba-Yamaha-Jhon\\Punto 2\\Backend\\FidelizacionBackend\\Services\\ClientService.cs",
+              "RelativeDocumentMoniker": "FidelizacionBackend\\Services\\ClientService.cs",
+              "ToolTip": "C:\\Users\\XLAT0\\Documents\\GitHub\\Prueba-Yamaha-Jhon\\Punto 2\\Backend\\FidelizacionBackend\\Services\\ClientService.cs",
+              "RelativeToolTip": "FidelizacionBackend\\Services\\ClientService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T22:10:04.047Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ClientController.cs",
+              "DocumentMoniker": "C:\\Users\\XLAT0\\Documents\\GitHub\\Prueba-Yamaha-Jhon\\Punto 2\\Backend\\FidelizacionBackend\\Controllers\\ClientController.cs",
+              "RelativeDocumentMoniker": "FidelizacionBackend\\Controllers\\ClientController.cs",
+              "ToolTip": "C:\\Users\\XLAT0\\Documents\\GitHub\\Prueba-Yamaha-Jhon\\Punto 2\\Backend\\FidelizacionBackend\\Controllers\\ClientController.cs",
+              "RelativeToolTip": "FidelizacionBackend\\Controllers\\ClientController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAADwAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T22:08:37.696Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
